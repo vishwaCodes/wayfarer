@@ -1,3 +1,5 @@
+import PostCard from './PostCard';
+
 function PostsList() {
   return (
     <div>
