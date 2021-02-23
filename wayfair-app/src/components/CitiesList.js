@@ -6,7 +6,7 @@ function CitiesList(props) {
   return (
     
     props.cities.map((city) => {
-      return <CityCard city={city} />
+      return <CityCard key={city.id} city={city} />
     })
     
   )
