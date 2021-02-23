@@ -1,12 +1,14 @@
 import CityCard from './CityCard';
 
 
-function CitiesList() {
+function CitiesList(props) {
+  console.log(props)
   return (
-    <div>
-      <CityCard />
-      
-    </div>
+    
+    props.cities.map((city) => {
+      return <CityCard city={city} />
+    })
+    
   )
 };
 

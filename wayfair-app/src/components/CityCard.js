@@ -1,9 +1,9 @@
 import PostsList from './PostsList'
 
-function CityCard() {
+function CityCard(props) {
   return (
     <div>
-      <h1>City</h1>
+      <h1>{props.city.city}</h1>
     </div>
   );
 };

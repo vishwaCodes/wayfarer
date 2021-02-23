@@ -25,7 +25,7 @@ class WayfarerContainer extends Component {
   render() {
     return (
       <div>
-        <CitiesList />
+        <CitiesList cities={this.state.cities} />
         <PostsList />
       </div>
     );
