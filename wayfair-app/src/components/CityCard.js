@@ -1,4 +1,4 @@
-import PostsList from './PostsList'
+
 
 function CityCard(props) {
 

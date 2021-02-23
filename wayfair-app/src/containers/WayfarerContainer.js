@@ -16,7 +16,6 @@ class WayfarerContainer extends Component {
     fetch(URL)
     .then(response => response.json())
     .then(json => {
-      console.log(json);
       this.setState({
         cities: json
       })
