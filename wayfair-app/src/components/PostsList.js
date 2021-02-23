@@ -1,10 +1,10 @@
 import PostCard from './PostCard';
 
-function PostsList() {
+function PostsList(props) {
   return (
-    <div>
-      <PostCard />
-    </div>
+    props.city.posts.map((post, i) => {
+      return <PostCard key={post._id} post={post}/>
+    })
   );
 };
 

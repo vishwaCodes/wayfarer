@@ -1,7 +1,7 @@
-function PostCard() {
+function PostCard(props) {
   return (
     <div>
-      <h1>Post</h1>
+      <h1>{props.post.title}</h1>
     </div>
   );
 };
