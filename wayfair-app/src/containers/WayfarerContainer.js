@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import CitiesList from '../components/CitiesList';
+import PostsList from '../components/PostsList'
 
 class WayfarerContainer extends Component {
   render() {
     return (
-      <h1>Wayfarer Container</h1>
+      <div>
+        <CitiesList />
+        <PostsList />
+      </div>
     );
   };
 };
