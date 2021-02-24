@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { withRouter } from 'react-router-dom';
 
 const URL = 'http://localhost:4000/api/posts';
 
@@ -6,11 +7,13 @@ class CreatePostPage extends Component {
   state = {
     title: '',
     body: '',
+    city: '',
   };
 
   handleChange = (event) => {
     this.setState({
-      [event.target.id]: event.target.value
+      [event.target.id]: event.target.value,
+      city: this.props.city._id
     });
   };
 
@@ -27,7 +30,7 @@ class CreatePostPage extends Component {
       return response.json();
     })
     .then((data) => {
-      this.props.history.push('/posts');
+      this.props.history.push('/wayfarer');
       console.log(data);
     })
     .catch((err) => console.log(err))
@@ -53,4 +56,4 @@ class CreatePostPage extends Component {
   }
 };
 
-export default CreatePostPage;
+export default withRouter(CreatePostPage);
