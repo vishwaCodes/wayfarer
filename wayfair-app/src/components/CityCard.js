@@ -1,5 +1,4 @@
 
-
 function CityCard(props) {
 
   function handleClick() {
