@@ -6,7 +6,6 @@ function CityCard(props) {
     props.updateCity(props.index);
   }
 
-
   return (
     <div>
       <h1 onClick={handleClick}>{props.city.city}</h1>
