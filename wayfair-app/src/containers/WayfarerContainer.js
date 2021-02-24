@@ -7,6 +7,7 @@ const URL = 'http://localhost:4000/api/cities'
 
 
 class WayfarerContainer extends Component {
+
   state = {
     cities: [],
     city: 0
@@ -31,7 +32,7 @@ class WayfarerContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div id="wayfarer">
         <CitiesList cities={this.state.cities} updateCity={this.updateCity}/>
         <hr/>
         <CityPage city={this.state.cities[this.state.city]}/>
