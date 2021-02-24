@@ -5,6 +5,7 @@ import WayfarerContainer from '../containers/WayfarerContainer';
 import LoginPage from '../pages/LoginPage';
 import SignupPage from '../pages/SignupPage';
 import CreatePostPage from '../pages/CreatePostPage'
+import EditPost from '../pages/EditPost'
 
 export default (
   <Switch>
@@ -13,5 +14,6 @@ export default (
     <Route path='/login' component={ LoginPage } />
     <Route path='/signup' component={ SignupPage } />
     <Route path='/create' component={ CreatePostPage } />
+    <Route path='/edit-post/:id' component={EditPost} />
   </Switch>
 );
