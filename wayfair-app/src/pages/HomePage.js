@@ -1,11 +1,14 @@
 import React from 'react';
+import Header from '../components/Header';
+import Section from '../components/Section';
 
 const HomePage = () => {
   return (
-    <h2>
-      Home Page
-    </h2>
-  );
+    <>
+    <Header />
+    <Section />
+    </>
+  )
 };
 
-export default HomePage;
+export default HomePage; 
