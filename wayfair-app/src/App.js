@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Header from './components/Header';
 import routes from './config/routes';
 
 
 import './App.css';
+
 
 function App() {
 
@@ -14,8 +17,8 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Header/>
+    <div className="App">  
+      <Navbar />  
       { routes }
       <div className={`modalBackground modalShowing-${modalState}`}>
         <div className="modalInner">
@@ -42,7 +45,7 @@ function App() {
           </div>
         </div>
       </div>
-        <button onClick={() => toggleModalState()} >Log In</button>
+        <Link onClick={() => toggleModalState()} >Log In</Link>
       </div>
   );
 }
