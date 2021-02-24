@@ -30,12 +30,23 @@ class WayfarerContainer extends Component {
     })
   }
 
+handleDelete = (id) => {
+fetch(`http://localhost:4000/api/posts/${id}`, {
+  method: 'DELETE',
+})
+.then(response => console.log(response))
+.then(jsonData => {
+  console.log(jsonData)
+})
+}
+
+
   render() {
     return (
       <div id="wayfarer">
         <CitiesList cities={this.state.cities} updateCity={this.updateCity}/>
         <hr/>
-        <CityPage city={this.state.cities[this.state.city]}/>
+        <CityPage city={this.state.cities[this.state.city]} deletePost={this.handleDelete}/>
       </div>
     );
   };
