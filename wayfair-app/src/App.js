@@ -30,7 +30,7 @@ function App() {
                 <form action="">
                   <input type="email" id="login" className="fadeIn second" name="login" placeholder="Email" />
                   <input type="text" id="password" className="fadeIn third" name="login" placeholder="Password"></input>
-                  <input type="submit" class="fadeIn fourth" value="Log In"></input>
+                  <input type="submit" className="fadeIn fourth" value="Log In"></input>
                 </form>
                 <div id="formFooter">
                   <a href="/" className="underlineHover">Forgot Password?</a>
