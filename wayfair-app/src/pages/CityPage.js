@@ -6,6 +6,7 @@ const CityPage = (props) => {
     <div>
       <h1>{props.city ? props.city.city : ""}</h1>
       {props.city ? <PostLists deletePost={props.deletePost} city={props.city}/> : ""}
+
       {/* <button onClick={CreatePostPage}><h1>+</h1></button> */}
       <CreatePostPage city={props.city} />
     </div>
