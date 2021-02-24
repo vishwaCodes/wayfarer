@@ -12,7 +12,7 @@ const Section = () => {
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i className="far fa-smile fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 className="my-3">Community</h4>
                         <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -20,7 +20,7 @@ const Section = () => {
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            <i className="fas fa-plane fa-stack-1x fa-inverse"></i>  
                         </span>
                         <h4 className="my-3">Travel</h4>
                         <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
@@ -28,7 +28,7 @@ const Section = () => {
                     <div className="col-md-4">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i className="fas fa-lock fa-stack-1x fa-inverse"></i>
+                            <i className="fas fa-camera-retro fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 className="my-3">Saring Memories</h4>
                         <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
