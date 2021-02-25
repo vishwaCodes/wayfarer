@@ -28,6 +28,17 @@ class WayfarerContainer extends Component {
     });
   };
 
+  handleChange = () => {
+    fetch(URL)
+    .then(response => response.json())
+    .then(json => {
+      this.setState({
+        cities: json
+      })
+    })
+    .catch(err => console.log(err))
+  }
+
   handleDelete = (id) => {
     fetch(`http://localhost:4000/api/posts/${id}`, {
       method: 'DELETE',
@@ -35,6 +46,7 @@ class WayfarerContainer extends Component {
       .then((response) => console.log(response))
       .then((jsonData) => {
         console.log(jsonData);
+        this.handleChange()
       });
   };
 
@@ -52,6 +64,7 @@ class WayfarerContainer extends Component {
             <CityPage
               city={this.state.cities[this.state.city]}
               deletePost={this.handleDelete}
+              update={this.handleChange}
             />
           </div>
         </div>
