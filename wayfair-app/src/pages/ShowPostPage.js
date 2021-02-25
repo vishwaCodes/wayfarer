@@ -29,12 +29,14 @@ state = {
   };
 
   render() {
+    console.log(this.state.comments)
     return (
       <div id='wayfarerContainer'>
         <div>
           <h1>{this.state.title}</h1>
           <p>{this.state.body}</p>
           <div>
+            <p>{this.state.comments.length} comments</p>
             <NewCommentForm update={this.handleChange} post={this.props.match.params.id}/>
           </div>
           <div className='container'>
