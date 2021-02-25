@@ -11,12 +11,21 @@ function PostCard(props) {
   }
 
   return (
-    <div className={`modalBackground modalShowing-${modalState}`}>
+    <div>
       <Link to={`/show-post/${props.post._id}`}>{props.post.title}</Link>
       {/* <p>{props.post.body}</p> */}
       <Link to={`/edit-post/${props.post._id}`}><button className='btn-primary'>Edit</button></Link>
-      
-      <button className='btn-primary' onClick={() => toggleModalState()}>Delete</button>
+      <div className={`modalBackground modalShowing-${modalState}`}>
+      <div id="deleteMsg">
+        <p>Are you sure you want to delete this post?</p>
+        <button onClick={() => props.deletePost(props.post._id)}>Yes</button>
+        <button>No</button>
+        <button id="exitBtn"  onClick={() => toggleModalState()}>
+        Exit
+        </button>
+      </div> 
+      </div>
+      <button onClick={() => toggleModalState()} >Delete</button>
     </div>
     
   );
