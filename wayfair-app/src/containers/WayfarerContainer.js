@@ -55,6 +55,7 @@ class WayfarerContainer extends Component {
     return (
       <>
       <div className='container wayfarerContainer' >
+        <NavbarWayfarer />
         <div className='row' id='wayfarerContainer'>
           <div id='wayfarerLeft' className='col-4'>
       <h2>Cities</h2>
