@@ -25,7 +25,7 @@ function PostCard(props) {
         </button>
       </div> 
       </div>
-      <button onClick={() => toggleModalState()} >Delete</button>
+      <button onClick={() => toggleModalState()} >Delete</button> 
     </div>
     
   );

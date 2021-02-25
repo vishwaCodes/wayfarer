@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Section = () => {
-  return (
+    return (
             <section className="page-section" id="services"> 
             <div className="container">
                 <div className="text-center">
