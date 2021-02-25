@@ -36,7 +36,7 @@ const Section = () => {
                 </div>
             </div>
         </section>
-  )
+)
 }
 
 export default Section;
