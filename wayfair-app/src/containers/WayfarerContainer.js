@@ -53,7 +53,7 @@ class WayfarerContainer extends Component {
 
   render() {
     return (
-      <>
+      <div>
       <div className='container wayfarerContainer' >
         <NavbarWayfarer />
         <div className='row' id='wayfarerContainer'>
@@ -74,7 +74,7 @@ class WayfarerContainer extends Component {
         </div>
       </div>
       <br />
-      </>
+      </div>
     );
   }
 }

@@ -50,7 +50,6 @@ class CreatePostPage extends Component {
 
       <div>
         <h2 id='newPostFont'>Add A New Post</h2>
-
         <form onSubmit={this.handleSubmit}>
           <div>
             <div>
@@ -64,9 +63,8 @@ class CreatePostPage extends Component {
                 onChange={this.handleChange}
               />
             </div>
-            <br />
-            <div class='form-floating'>
-              <textarea
+            <div>
+                <textarea
                 className='form-control'
                 placeholder='Write post...'
                 name='body'

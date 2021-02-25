@@ -8,6 +8,7 @@
   width: 100%;
 }
 
+
 .modalBackground {
   opacity: 0;
   pointer-events: none;
@@ -320,6 +321,15 @@ margin-top: 5%;
 background-color: transparent;
 }
 
+#deleteIcon {
+  width:110%;
+  margin-right: 40%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  background-color: transparent;
+  align-items: center;
+}
+
 #icon1 {
 width:13%;
 margin-bottom: 5%;
@@ -330,6 +340,12 @@ background-color: transparent;
 #loginButton {
   background-color: rgb(78, 150, 123);
   margin-top: 3%;
+}
+
+#signUpButton {
+  background-color: rgb(78, 150, 123);
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 .navbar-custom {
@@ -591,3 +607,51 @@ a {
 .post-link {
   margin-left: 5px;
 }
+
+.icon-box {
+  font-size: 10px;
+  display: inline-block;
+  margin-top: 13px;
+  height: 10%;
+  width: 60px;
+  align-items: center;
+}
+
+.modal-header {
+  border-bottom: none;   
+	position: relative;
+}
+
+.modal-body {
+  color: rgba(0, 0, 0, 0.623);
+  font-size: 18px;
+}
+
+.modal-title {
+  color:rgba(0, 0, 0, 0.623);
+}
+
+#cancelBtn  {
+  background-color: rgba(128, 128, 128, 0.877);
+  border-radius: none;
+  border: none;
+  width: 25%;
+  margin-bottom: 10%;
+}
+
+#cancelBtn:hover {
+  background-color: rgb(109, 107, 107);
+}
+
+#deletePostBtn {
+  border-radius: none;
+  border: none;
+  width: 25%;
+  background-color: rgb(167, 79, 79);
+  margin-bottom: 10%;
+  margin-left: 4%;
+}
+
+#deletePostBtn:hover {
+  background-color: rgb(136, 62, 62);
+} 

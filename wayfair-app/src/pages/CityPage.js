@@ -27,7 +27,7 @@ const CityPage = (props) => {
       </div>
       <br />
 
-      <hr />
+      
       {/* <button onClick={CreatePostPage}><h1>+</h1></button> */}
       <CreatePostPage update={props.update} city={props.city} />
     </div>

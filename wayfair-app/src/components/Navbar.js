@@ -36,7 +36,7 @@ const Navbar = () => {
                   <input type="text" id="username" className="fadeIn second" name="login" placeholder="Username" />
                   <input type="email" id="login" className="fadeIn second" name="login" placeholder="Email" />
                   <input type="text" id="password" className="fadeIn third" name="login" placeholder="Password"></input>
-                  <input id="loginButton" type="submit" class="fadeIn fourth" value="Sign Up"></input>
+                  <input id="signUpButton" type="submit" class="fadeIn fourth" value="Sign Up"></input>
                 </form>
                 <button id="exitBtn"  onClick={() => toggleModalState2()}> 
                   Exit
