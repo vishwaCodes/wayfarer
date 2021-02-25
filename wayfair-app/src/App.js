@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
 import routes from './config/routes';
-
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -46,6 +45,7 @@ function App() {
         </div>
       </div>
         <Link onClick={() => toggleModalState()} >Log In</Link>
+        <Footer />
       </div>
   );
 }
