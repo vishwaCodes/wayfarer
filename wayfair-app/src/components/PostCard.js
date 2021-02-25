@@ -23,10 +23,7 @@ function PostCard(props) {
         <div id="deleteMsg">
           <p>Are you sure you want to delete this post?</p>
           <button onClick={() => props.deletePost(props.post._id)}>Yes</button>
-          <button>No</button>
-          <button id="exitBtn"  onClick={() => toggleModalState()}>
-            Exit
-          </button>
+          <button onClick={() => toggleModalState()}>No</button>
         </div> 
       </div>
       <button className='btn btn-warning'onClick={() => toggleModalState()} >Delete</button> 
