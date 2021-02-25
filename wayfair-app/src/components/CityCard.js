@@ -6,7 +6,8 @@ function CityCard(props) {
   }
 
   return (
-    <div>
+    
+    <div className='card' id='cityCard'>
       <h1 onClick={handleClick}>{props.city.city}</h1>
     </div>
   );

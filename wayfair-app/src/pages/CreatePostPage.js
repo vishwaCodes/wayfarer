@@ -32,6 +32,12 @@ class CreatePostPage extends Component {
     .then((data) => {
       this.props.history.push('/wayfarer');
       console.log(data);
+      this.props.update()
+      this.setState({
+        title: '',
+        body: '',
+        city: '',
+      })
     })
     .catch((err) => console.log(err))
   };
