@@ -2,7 +2,7 @@ import React from 'react';
 
 class NewCommentForm extends React.Component {
   state = {
-    title: '',
+    // title: '',
     body: '',
     post: this.props.post
   }
@@ -31,7 +31,7 @@ class NewCommentForm extends React.Component {
         console.log(data);
         this.props.update();
         this.setState({
-          title: '',
+          // title: '',
           body: '',
         });
       })
@@ -45,7 +45,7 @@ class NewCommentForm extends React.Component {
 
         <form onSubmit={this.handleSubmit}>
           <div>
-            <div>
+            {/* <div>
               <input
                 type='text'
                 className='form-control'
@@ -55,8 +55,8 @@ class NewCommentForm extends React.Component {
                 value={this.state.title}
                 onChange={this.handleChange}
               />
-            </div>
-            <br />
+            </div> */}
+            {/* <br /> */}
             <div class='form-floating'>
               <textarea
                 className='form-control'

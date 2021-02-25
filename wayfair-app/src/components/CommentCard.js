@@ -4,7 +4,7 @@ const CommentCard = (props) => {
     <div className='card'>
       <div className='row'>
         <div className="card-body">
-          <h4 className="card-title">{props.comment.title}</h4>
+          {/* <h4 className="card-title">{props.comment.title}</h4> */}
           <p className="card-text">{props.comment.body}</p>
         </div>
       </div>
