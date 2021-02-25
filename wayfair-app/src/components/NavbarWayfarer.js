@@ -1,8 +1,6 @@
 import React from 'react';
 
-
-const Navbar = () => {
-
+const NavbarWayfarer = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div className="container">
@@ -22,10 +20,13 @@ const Navbar = () => {
             <a className="nav-link" href="/login">Log In</a>
           </li>
         </ul>
+        <div className="d-flex"> 
+          <input id="searchBar" className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+        </div>
       </div>
     </div>
   </nav>
   );
 };
 
-export default Navbar;
+export default NavbarWayfarer;

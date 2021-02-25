@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CitiesList from '../components/CitiesList';
 import CityPage from '../pages/CityPage';
+import NavbarWayfarer from '../components/NavbarWayfarer';
 // import PostsList from '../components/PostsList'
 
 const URL = 'http://localhost:4000/api/cities';
@@ -53,6 +54,7 @@ class WayfarerContainer extends Component {
   render() {
     return (
       <div className='container' id='wayfarerContainer'>
+      <NavbarWayfarer />
         <div className='row'>
           <div id='wayfarer' className='col-4'>
             <CitiesList
