@@ -1,34 +1,31 @@
-import {Link } from 'react-router-dom';
-import React, {useState} from 'react';
-
-
+import { Link } from 'react-router-dom';
 
 function PostCard(props) {
-  const [modalState, setModalState] = useState(false);
-
-  const toggleModalState = () => {
-    setModalState(!modalState)
-  }
-
   return (
     <div>
-      <Link to={`/show-post/${props.post._id}`}>{props.post.title}</Link>
-      {/* <p>{props.post.body}</p> */}
-      <Link to={`/edit-post/${props.post._id}`}><button className='btn-primary'>Edit</button></Link>
-      <div className={`modalBackground modalShowing-${modalState}`}>
-      <div id="deleteMsg">
-        <p>Are you sure you want to delete this post?</p>
-        <button onClick={() => props.deletePost(props.post._id)}>Yes</button>
-        <button>No</button>
-        <button id="exitBtn"  onClick={() => toggleModalState()}>
-        Exit
-        </button>
-      </div> 
+      <div classNam='card'>
+        <div className='row'>
+          <div className='col-5'>
+            <Link to={`/show-post/${props.post._id}`}>{props.post.title}</Link>
+            {/* <p>{props.post.body}</p> */}
+          </div>
+          <div className='col-7'>
+            <Link to={`/edit-post/${props.post._id}`}>
+              <button className='btn btn-warning'>Edit</button>{' '}
+            </Link>
+            <button
+              className='btn btn-danger'
+              onClick={() => props.deletePost(props.post._id)}
+            >
+              Delete
+            </button>
+          </div>
+        </div>
       </div>
-      <button onClick={() => toggleModalState()} >Delete</button> 
+      <hr />
     </div>
     
   );
-};
+}
 
 export default PostCard;

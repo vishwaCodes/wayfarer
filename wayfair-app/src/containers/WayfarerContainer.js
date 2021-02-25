@@ -31,14 +31,14 @@ class WayfarerContainer extends Component {
 
   handleChange = () => {
     fetch(URL)
-    .then(response => response.json())
-    .then(json => {
-      this.setState({
-        cities: json
+      .then((response) => response.json())
+      .then((json) => {
+        this.setState({
+          cities: json,
+        });
       })
-    })
-    .catch(err => console.log(err))
-  }
+      .catch((err) => console.log(err));
+  };
 
   handleDelete = (id) => {
     fetch(`http://localhost:4000/api/posts/${id}`, {
@@ -47,22 +47,23 @@ class WayfarerContainer extends Component {
       .then((response) => console.log(response))
       .then((jsonData) => {
         console.log(jsonData);
-        this.handleChange()
+        this.handleChange();
       });
   };
 
   render() {
     return (
-      <div className='container' id='wayfarerContainer'>
-      <NavbarWayfarer />
-        <div className='row'>
-          <div id='wayfarer' className='col-4'>
+      <>
+      <div className='container wayfarerContainer' >
+        <div className='row' id='wayfarerContainer'>
+          <div id='wayfarerLeft' className='col-4'>
+      <h2>Cities</h2>
             <CitiesList
               cities={this.state.cities}
               updateCity={this.updateCity}
             />
           </div>
-          <div className='col-8'>
+          <div id='wayfarerRight' className='col-8'>
             <CityPage
               city={this.state.cities[this.state.city]}
               deletePost={this.handleDelete}
@@ -71,6 +72,8 @@ class WayfarerContainer extends Component {
           </div>
         </div>
       </div>
+      <br />
+      </>
     );
   }
 }
