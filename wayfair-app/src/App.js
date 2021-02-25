@@ -1,59 +1,19 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Header from './components/Header';
 import routes from './config/routes';
-
+import Footer from './components/Footer';
 
 import './App.css';
-
+import WayfarerContainer from './containers/WayfarerContainer';
 
 function App() {
-
-  const [modalState, setModalState] = useState(false);
-
-  const toggleModalState = () => {
-    setModalState(!modalState)
-  }
-
   return (
-    <div className="App">  
-      <Navbar />  
-      { routes }
-      <div className={`modalBackground modalShowing-${modalState}`}>
-        <div className="modalInner">
-          <div className="modalImage">
-            <img src="https://images.unsplash.com/photo-1488085061387-422e29b40080?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="modalImg" />
-          </div>
-          <div className="wrapper fadeInDown">
-              <div id="formContent">
-                <div className="fadeIn first">
-                  <img src="" id="icon" alt="User Icon"/>
-                </div>
-                <form action="">
-                  <input type="email" id="login" className="fadeIn second" name="login" placeholder="Email" />
-                  <input type="text" id="password" className="fadeIn third" name="login" placeholder="Password"></input>
-                  <input type="submit" class="fadeIn fourth" value="Log In"></input>
-                </form>
-                <div id="formFooter">
-                  <a href="/" className="underlineHover">Forgot Password?</a>
-                </div>
-                <button id="exitBtn"  onClick={() => toggleModalState()}>
-                  Exit
-                </button>
-              </div>
-          </div>
-        </div>
-      </div>
-        <Link onClick={() => toggleModalState()} >Log In</Link>
-      </div>
+    <div>
+      <Navbar />
+      {routes}
+      
+      <Footer />
+    </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
