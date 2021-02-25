@@ -1,4 +1,3 @@
-
 #loginBtn {
   padding: 13px 35px;
   background: rgb(104, 93, 182);
@@ -49,7 +48,6 @@
   line-height: 180%;
 }
 
-
 .modalImage img {
   width: 500px;
   object-fit: cover;
@@ -67,7 +65,7 @@
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -83,8 +81,8 @@
   max-width: 450px;
   position: relative;
   padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
-  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
@@ -97,7 +95,9 @@
   border-radius: 0 0 10px 10px;
 }
 
-input[type=button], input[type=submit], input[type=reset]  {
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
   background-color: #56baed;
   border: none;
   color: white;
@@ -107,8 +107,8 @@ input[type=button], input[type=submit], input[type=reset]  {
   display: inline-block;
   text-transform: uppercase;
   font-size: 13px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
-  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
@@ -119,11 +119,15 @@ input[type=button], input[type=submit], input[type=reset]  {
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+input[type='button']:hover,
+input[type='submit']:hover,
+input[type='reset']:hover {
   background-color: #39ace7;
 }
 
-input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+input[type='button']:active,
+input[type='submit']:active,
+input[type='reset']:active {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
@@ -131,7 +135,7 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active  
   transform: scale(0.95);
 }
 
-input[type=text] {
+input[type='text'] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -152,7 +156,7 @@ input[type=text] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=email] {
+input[type='email'] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
@@ -173,21 +177,21 @@ input[type=email] {
   border-radius: 5px 5px 5px 5px;
 }
 
-input[type=text]:focus {
+input[type='text']:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
 
-input[type=email]:focus {
+input[type='email']:focus {
   background-color: #fff;
   border-bottom: 2px solid #5fbae9;
 }
 
-input[type=text]:placeholder {
+input[type='text']:placeholder {
   color: #cccccc;
 }
 
-input[type=email]:placeholder {
+input[type='email']:placeholder {
   color: #cccccc;
 }
 
@@ -227,23 +231,44 @@ input[type=email]:placeholder {
 }
 
 /* Simple CSS3 Fade-in Animation */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fadeIn {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .fadeIn.second {
@@ -271,9 +296,8 @@ input[type=email]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #000000;
-  color: black;
-  content: "";
+  background-color: #56baed;
+  content: '';
   transition: width 0.2s;
 }
 
@@ -281,13 +305,13 @@ input[type=email]:placeholder {
   color: #aa8e8e;
 }
 
-.underlineHover:hover:after{
+.underlineHover:hover:after {
   width: 100%;
 }
 
 *:focus {
   outline: none;
-} 
+}
 
 #icon {
 width:20%;
@@ -337,13 +361,13 @@ header.masthead {
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
-  height: 80vh; 
-  background-image: url("https://images.unsplash.com/photo-1569325170122-9bdbc2334c22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1191&q=80");
-  background-image: url("https://images.unsplash.com/photo-1529653323121-e4731c50e7ac?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1191&q=80");
-  background-image: url("https://images.unsplash.com/photo-1579752284549-71eb9dd09f4b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80");
-  background-image: url("https://images.unsplash.com/photo-1453747063559-36695c8771bd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80");
-  background-image: url("https://images.unsplash.com/photo-1586312305828-c4e7eaf0d165?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80");
-} 
+  height: 80vh;
+  background-image: url('https://images.unsplash.com/photo-1569325170122-9bdbc2334c22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1191&q=80');
+  background-image: url('https://images.unsplash.com/photo-1529653323121-e4731c50e7ac?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1191&q=80');
+  background-image: url('https://images.unsplash.com/photo-1579752284549-71eb9dd09f4b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80');
+  background-image: url('https://images.unsplash.com/photo-1453747063559-36695c8771bd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80');
+  background-image: url('https://images.unsplash.com/photo-1586312305828-c4e7eaf0d165?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1189&q=80');
+}
 
 header.masthead .masthead-content {
   z-index: 1;
@@ -365,6 +389,7 @@ header.masthead .masthead-content {
 
 .page-section {
   padding: 6rem 0;
+  background-color: rgba(161, 156, 156, 0.253);
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -375,24 +400,40 @@ header.masthead .masthead-content {
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
-  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   margin-bottom: 4rem;
 }
 
-#wayfarerContainer{
+#newPostFont {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#wayfarerContainer {
   padding-top: 120px;
+  border: solid black 2px;
+  width: 100%;
+  
 }
 
-#wayfarer{
+#wayfarerLeft {
+  overflow: scroll;
   cursor: pointer;
+  background-color: darkgray;
+  border: solid rgb(75, 55, 160) 3px;
+}
+#wayfarerRight {
+  overflow: scroll;
+  background-color: darkgray;
+  border: solid rgb(90, 71, 161) 3px;
 }
 
-#cityCard{
+#cityCard {
   border-radius: 30px;
   background-color: #39ace7;
   text-align: center;
   margin-top: 20px;
-  
 }
 
 #cityCard h1 {
@@ -509,7 +550,7 @@ footer .copyright {
 }
 
 #searchBar {
-  padding-left: 60%;
+  padding-left: 70%;
 }
 
 .me-2 {

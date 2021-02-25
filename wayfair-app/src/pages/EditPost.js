@@ -50,6 +50,7 @@ handleSubmit = (event) => {
             <input
               type='text'
               id='title'
+              className='form-control'
               name='title'
               value={this.state.title}
               onChange={this.handleChange}
@@ -59,6 +60,7 @@ handleSubmit = (event) => {
             <textarea
               name='body'
               id='body'
+              className='form-control'
               cols='30'
               rows='10'
               value={this.state.body}
@@ -66,7 +68,8 @@ handleSubmit = (event) => {
               placeholder='Write post...'
             />
           </div>
-          <button type='submit'>Submit</button>
+          <br />
+          <button className='btn btn-success' type='submit'>Edit Post</button>
         </form>
       </div>
     );

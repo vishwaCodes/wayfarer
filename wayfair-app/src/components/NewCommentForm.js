@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import React from 'react';
 
-const URL = 'http://localhost:4000/api/posts';
-
-class CreatePostPage extends Component {
+class NewCommentForm extends React.Component {
   state = {
-    title: '',
+    // title: '',
     body: '',
-    city: '',
-  };
+    post: this.props.post
+  }
 
   handleChange = (event) => {
     this.setState({
       [event.target.id]: event.target.value,
-      city: this.props.city._id,
+      
     });
   };
 
+
   handleSubmit = (event) => {
     event.preventDefault();
-    fetch(URL, {
+    fetch('http://localhost:4000/api/comments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,30 +28,24 @@ class CreatePostPage extends Component {
         return response.json();
       })
       .then((data) => {
-        this.props.history.push('/wayfarer');
         console.log(data);
         this.props.update();
         this.setState({
-          title: '',
+          // title: '',
           body: '',
-          city: '',
         });
       })
       .catch((err) => console.log(err));
   };
 
-  style = {
-    height: '100px',
-  };
   render() {
-    return (
-
+    return(
       <div>
-        <h2 id='newPostFont'>Add A New Post</h2>
+        <h2>Add a comment</h2>
 
         <form onSubmit={this.handleSubmit}>
           <div>
-            <div>
+            {/* <div>
               <input
                 type='text'
                 className='form-control'
@@ -63,8 +55,8 @@ class CreatePostPage extends Component {
                 value={this.state.title}
                 onChange={this.handleChange}
               />
-            </div>
-            <br />
+            </div> */}
+            {/* <br /> */}
             <div class='form-floating'>
               <textarea
                 className='form-control'
@@ -82,12 +74,13 @@ class CreatePostPage extends Component {
             <br />
           </div>
           <button className='btn btn-success' type='submit'>
-            Add Post
+            Add Comment
           </button>
         </form>
       </div>
     );
   }
+
 }
 
-export default withRouter(CreatePostPage);
+export default NewCommentForm;

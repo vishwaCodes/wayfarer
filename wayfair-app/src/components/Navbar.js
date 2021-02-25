@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Icon from '../images/icon.png';
 
 const Navbar = () => {
-
   const [modalState, setModalState] = useState(false);
   const [modalState2, setModalState2] = useState(false);
 
@@ -75,14 +74,10 @@ const Navbar = () => {
           <li className="nav-item">
             <a onClick={() => toggleModalState()} className="nav-link">Log In</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/create">Create a Post</a>
-          </li>
         </ul>
       </div>
     </div>
   </nav>
   );
 };
-
 export default Navbar;

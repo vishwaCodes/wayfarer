@@ -13,12 +13,6 @@ const NavbarWayfarer = () => {
         <li className="nav-item">
             <a className="nav-link" href="/">Home</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/signup">Sign Up</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/login">Log In</a>
-          </li>
         </ul>
         <div id="searchBar" className="d-flex"> 
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
