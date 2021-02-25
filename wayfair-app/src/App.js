@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div className="App">  
-      <Navbar />  
       { routes }
       <div className={`modalBackground modalShowing-${modalState}`}>
         <div className="modalInner">
