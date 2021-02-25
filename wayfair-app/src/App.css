@@ -12,6 +12,7 @@
 .modalBackground {
   opacity: 0;
   pointer-events: none;
+  cursor: pointer;
   transition: opacity 0.4s ease-in-out;
   position: absolute;
   left: 0;
@@ -25,6 +26,11 @@
 }
 
 .modalShowing-true {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modalShowingSignup-true {
   opacity: 1;
   pointer-events: visible;
 }
@@ -285,6 +291,13 @@ input[type=email]:placeholder {
 
 #icon {
 width:20%;
+margin-bottom: 5%;
+margin-top: 5%;
+background-color: transparent;
+}
+
+#icon1 {
+width:13%;
 margin-bottom: 5%;
 margin-top: 5%;
 background-color: transparent;
