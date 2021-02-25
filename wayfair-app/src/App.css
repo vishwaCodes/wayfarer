@@ -1,5 +1,4 @@
 
-
 #loginBtn {
   padding: 13px 35px;
   background: rgb(104, 93, 182);
@@ -31,7 +30,7 @@
 }
 
 .modalInner {
-  background: rgba(151, 139, 139, 0.397);
+  background: none;
   width: 900px;
   max-width: calc(100% - 60px);
   margin: auto;
@@ -266,7 +265,8 @@ input[type=email]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: #000000;
+  color: black;
   content: "";
   transition: width 0.2s;
 }
@@ -284,7 +284,15 @@ input[type=email]:placeholder {
 } 
 
 #icon {
-width:60%;
+width:20%;
+margin-bottom: 5%;
+margin-top: 5%;
+background-color: transparent;
+}
+
+#loginButton {
+  background-color: rgb(78, 150, 123);
+  margin-top: 3%;
 }
 
 .navbar-custom {
