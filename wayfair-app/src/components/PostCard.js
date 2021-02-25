@@ -12,13 +12,14 @@ function PostCard(props) {
 
   return (
     <div>
-      <div classNam='card'>
-        <div className='row'>
-          <div className='col-5'>
-            <Link to={`/show-post/${props.post._id}`}>{props.post.title}</Link>
+      <div className='card post-card'>
+        <div className='row' id="post-div">
+          <div class="post-div">
+            <Link className="post-link" to={`/show-post/${props.post._id}`}>{props.post.title}</Link>
           </div>
-          <div className='col-7'>
-            <Link to={`/edit-post/${props.post._id}`}><button className='btn btn-warning'>Edit</button>{' '}</Link>
+          <div class="btn-div">
+            <Link to={`/edit-post/${props.post._id}`}><button className='btn btn-warning post-btns'>Edit</button></Link>
+            <button className='btn btn-warning post-btns'onClick={() => toggleModalState()} >Delete</button> 
             <div className={`modalBackground modalShowing-${modalState}`}>
         <div id="deleteMsg">
           <p>Are you sure you want to delete this post?</p>
@@ -26,7 +27,6 @@ function PostCard(props) {
           <button onClick={() => toggleModalState()}>No</button>
         </div> 
       </div>
-      <button className='btn btn-warning'onClick={() => toggleModalState()} >Delete</button> 
           </div>
         </div>
       </div>

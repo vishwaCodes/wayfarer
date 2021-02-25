@@ -412,7 +412,6 @@ header.masthead .masthead-content {
 
 #wayfarerContainer {
   padding-top: 120px;
-  border: solid black 2px;
   width: 100%;
   
 }
@@ -420,18 +419,12 @@ header.masthead .masthead-content {
 #wayfarerLeft {
   overflow: scroll;
   cursor: pointer;
-  background-color: darkgray;
-  border: solid rgb(75, 55, 160) 3px;
 }
 #wayfarerRight {
   overflow: scroll;
-  background-color: darkgray;
-  border: solid rgb(90, 71, 161) 3px;
 }
 
 #cityCard {
-  border-radius: 30px;
-  background-color: #39ace7;
   text-align: center;
   margin-top: 20px;
 }
@@ -555,4 +548,46 @@ footer .copyright {
 
 .me-2 {
   margin-right: .5rem!important;
+}
+
+.btn {
+  background-color: #198754;
+  border-color: #198754;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#post-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.post-div {
+  position: relative;
+  width: 50%;
+}
+
+.btn-div {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.post-btns {
+  margin: 3px;
+}
+
+.post-card {
+  border: none;
+  background-color: rgba(255,255,255,0);
+}
+
+.post-link {
+  margin-left: 5px;
 }

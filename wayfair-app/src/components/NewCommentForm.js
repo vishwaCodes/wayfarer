@@ -69,7 +69,7 @@ class NewCommentForm extends React.Component {
                 value={this.state.body}
                 onChange={this.handleChange}
               />
-              <label htmlFor='floatingTextarea2'>Post</label>
+              <label htmlFor='floatingTextarea2'>Comment</label>
             </div>
             <br />
           </div>
