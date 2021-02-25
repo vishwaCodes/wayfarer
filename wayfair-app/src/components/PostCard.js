@@ -24,6 +24,7 @@ function PostCard(props) {
       </div>
       <hr />
     </div>
+    
   );
 }
 

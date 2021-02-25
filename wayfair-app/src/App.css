@@ -29,7 +29,7 @@
 }
 
 .modalInner {
-  background: rgba(151, 139, 139, 0.397);
+  background: none;
   width: 900px;
   max-width: calc(100% - 60px);
   margin: auto;
@@ -308,7 +308,15 @@ input[type='email']:placeholder {
 }
 
 #icon {
-  width: 60%;
+width:20%;
+margin-bottom: 5%;
+margin-top: 5%;
+background-color: transparent;
+}
+
+#loginButton {
+  background-color: rgb(78, 150, 123);
+  margin-top: 3%;
 }
 
 .navbar-custom {
@@ -419,4 +427,121 @@ body {
 
 #cityCard h1 {
   font-size: 20px;
+}
+
+#deleteBtn {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#deleteMsg {
+  width: 200%;
+  height: 100%;
+  background-color: yellow;
+}
+
+footer {
+  padding: 30px 0 30px;
+  display: block;
+  background-color: rgba(175, 175, 175, 0.089);
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+#footerUl {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#footerSocials {
+  color: black;
+  text-align: center;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+#footerSocials:hover {
+  color: rgb(88, 121, 131);
+}
+
+footer .copyright {
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.text-muted {
+  color: #6c757d!important;
+}
+
+#copyright {
+    line-height: 1.5;
+    margin: 30px 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    margin-left: 25px;
+    font-family: Lora,'Times New Roman',serif;
+}
+
+
+#footerRow {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-lg-8 .col-md-10 {
+  position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+
+#twitter {
+  height: 100px;
+}
+
+#facebook {
+  height: 100px;
+}
+
+#github {
+  height: 100px;
+}
+
+#page-section-social {
+  background-color: black;
+}
+
+.fas .fa-circle {
+  color: rgb(0, 0, 0);
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+#searchBar {
+  padding-left: 60%;
+}
+
+.me-2 {
+  margin-right: .5rem!important;
 }
