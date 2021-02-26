@@ -1,4 +1,5 @@
 import React from 'react';
+import EditPageNavbar from '../components/EditPageNavbar';
 
 const URL = 'http://localhost:4000/api/posts/';
 
@@ -19,7 +20,6 @@ class EditPost extends React.Component {
   }
 
 handleChange = (event) => {
-   
     this.setState({
         [event.target.id]: event.target.value
     })
@@ -42,11 +42,13 @@ handleSubmit = (event) => {
   render() {
     return (
       <div>
+      <EditPageNavbar />
+
         <h1>Edit</h1>
 
         <form onSubmit={this.handleSubmit}>
-          <div>
-            <label htmlFor='title'>Title</label>
+          <div className="mt-5">
+            <label id="title-label" htmlFor='title'>Title:</label>
             <input
               type='text'
               id='title'
@@ -55,8 +57,6 @@ handleSubmit = (event) => {
               value={this.state.title}
               onChange={this.handleChange}
             />
-            <br />
-
             <textarea
               name='body'
               id='body'
@@ -69,7 +69,7 @@ handleSubmit = (event) => {
             />
           </div>
           <br />
-          <button className='btn btn-success' type='submit'>Edit Post</button>
+          <button id="editPostBtn" className='btn btn-success' type='submit'>Edit Post</button>
         </form>
       </div>
     );
