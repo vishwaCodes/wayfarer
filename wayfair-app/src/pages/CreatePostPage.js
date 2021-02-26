@@ -49,14 +49,14 @@ class CreatePostPage extends Component {
     return (
 
       <div>
-        <h2 id='newPostFont'>Add A New Post</h2>
+        <h2 id='newPostFont'>Add A New Post <i class="far fa-edit"></i></h2>
         <form onSubmit={this.handleSubmit}>
           <div>
             <div>
               <input
                 type='text'
                 className='form-control'
-                placeholder='title of post..'
+                placeholder='Title of post..'
                 id='title'
                 name='title'
                 value={this.state.title}
@@ -79,7 +79,7 @@ class CreatePostPage extends Component {
             </div>
             <br />
           </div>
-          <button className='btn btn-success' type='submit'>
+          <button id="addPostBtn" className='btn btn-success' type='submit'>
             Add Post
           </button>
         </form>
