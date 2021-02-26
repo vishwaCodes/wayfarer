@@ -47,8 +47,8 @@ handleSubmit = (event) => {
         <h1>Edit</h1>
 
         <form onSubmit={this.handleSubmit}>
+        <label id="title-label" htmlFor='title'>Title:</label>
           <div className="mt-5">
-            <label id="title-label" htmlFor='title'>Title:</label>
             <input
               type='text'
               id='title'
@@ -65,11 +65,11 @@ handleSubmit = (event) => {
               rows='10'
               value={this.state.body}
               onChange={this.handleChange}
-              placeholder='Write post...'
+              placeholder='Edit Post...'
             />
           </div>
           <br />
-          <button id="editPostBtn" className='btn btn-success' type='submit'>Edit Post</button>
+          <button id="editPostBtn" className='btn btn-success' type='submit'>Submit</button>
         </form>
       </div>
     );
