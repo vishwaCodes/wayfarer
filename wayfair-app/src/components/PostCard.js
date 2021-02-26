@@ -18,8 +18,8 @@ function PostCard(props) {
             <Link className="post-link" to={`/show-post/${props.post._id}`}>{props.post.title}</Link>
           </div>
           <div className='btn-div'>
-          <Link to={`/edit-post/${props.post._id}`}><button className='btn btn-warning post-btns'>Edit</button>{' '}</Link>
-                  <button className='btn btn-warning post-btns' onClick={() => toggleModalState()} >Delete</button>
+          <Link to={`/edit-post/${props.post._id}`}><button id="editBtn2" className='btn btn-warning post-btns'>Edit</button>{' '}</Link>
+          <button id="deleteBtn2" className='btn btn-warning post-btns' onClick={() => toggleModalState()} >Delete</button>
           </div>
           <div>
             <div className={`modalBackground modalShowing-${modalState}`}>
