@@ -6,6 +6,7 @@ import WayfarerContainer from '../containers/WayfarerContainer';
 import SignupPage from '../pages/SignupPage';
 import ShowPostPage from '../pages/ShowPostPage'
 import EditPost from '../pages/EditPost'
+import AboutPage from '../pages/AboutPage';
 
 
 export default (
@@ -16,5 +17,6 @@ export default (
     <Route path='/signup' component={ SignupPage } />
     <Route path='/show-post/:id' component={ ShowPostPage } />
     <Route path='/edit-post/:id' component={EditPost} />
+    <Route path='/about' component={AboutPage} />
   </Switch>
 );
