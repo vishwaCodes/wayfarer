@@ -688,3 +688,21 @@ a {
 .post-link {
   margin-left: 5px;
 }
+
+#title {
+  width: 30%;
+}
+
+#title-label {
+  font-size: 22px;
+  margin-right: 1%;
+}
+
+#body {
+  width: 50%;
+  margin-top: 5%;
+}
+
+#editPostBtn {
+  margin-bottom: 10%;
+}
