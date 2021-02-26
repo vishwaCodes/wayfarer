@@ -32,6 +32,9 @@ const Navbar = () => {
             <div className="modalInner">
             <div className="wrapper fadeInDown">
               <div id="formContent">
+              <button id="exitBtn"  onClick={() => toggleModalState2()}> 
+                <i class="fas fa-times-circle"></i>
+              </button>
                 <div className="fadeIn first">
                   <img src={Icon} id="icon1" alt="User Icon"/>
                 </div>
@@ -41,9 +44,6 @@ const Navbar = () => {
                   <input type="text" id="password" className="fadeIn third" name="login" placeholder="Password"></input>
                   <input id="signUpButton" type="submit" class="fadeIn fourth" value="Sign Up"></input>
                 </form>
-                <button id="exitBtn"  onClick={() => toggleModalState2()}> 
-                  Exit
-                </button>
               </div>
           </div>
             </div>
@@ -56,9 +56,13 @@ const Navbar = () => {
         <div className="modalInner">
           <div className="wrapper fadeInDown">
               <div id="formContent">
+              <button id="exitBtn"  onClick={() => toggleModalState()}> 
+                <i class="fas fa-times-circle"></i>
+              </button>
                 <div className="fadeIn first">
                   <img src="https://img.icons8.com/bubbles/2x/login-rounded-right.png" id="icon" alt="User Icon"/>
                 </div>
+            
                 <form action="">
                   <input type="email" id="login" className="fadeIn second" name="login" placeholder="Email" />
                   <input type="text" id="password" className="fadeIn third" name="login" placeholder="Password"></input>
@@ -67,9 +71,6 @@ const Navbar = () => {
                 <div id="formFooter">
                   <a href="/" className="underlineHover">Forgot Password?</a>
                 </div>
-                <button id="exitBtn"  onClick={() => toggleModalState()}> 
-                  Exit
-                </button>
               </div>
           </div>
         </div>
