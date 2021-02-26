@@ -57,7 +57,7 @@ class CreatePostPage extends Component {
                 type='text'
                 className='form-control'
                 placeholder='Title of post..'
-                id='title-1'
+                id='title'
                 name='title'
                 value={this.state.title}
                 onChange={this.handleChange}
@@ -68,7 +68,7 @@ class CreatePostPage extends Component {
                 className='form-control'
                 placeholder='Write post...'
                 name='body'
-                id='body-1'
+                id='body'
                 style={this.style}
                 cols='30'
                 rows='10'
